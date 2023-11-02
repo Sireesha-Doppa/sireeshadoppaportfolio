@@ -46,32 +46,6 @@ function addActiveLink() {
 
 window.addEventListener("scroll", addActiveLink);
 
-// increment counter
-function startCounter(counter) {
-  // Get the target number
-  const targetNumber = counter.getAttribute("data-target");
-  const increment = setInterval(() => {
-    counter.textContent++;
-
-    if (counter.textContent == targetNumber) {
-      clearInterval(increment);
-    }
-  }, 2000 / targetNumber);
-}
-
-const counterSection = document.querySelector(".counter");
-const counters = document.querySelectorAll(".counter__number");
-let started = false;
-
-window.addEventListener("scroll", () => {
-  if (window.scrollY >= counterSection.offsetTop - 400) {
-    if (!started) {
-      counters.forEach((counter) => startCounter(counter));
-    }
-    started = true;
-  }
-});
-
 // Testimonial Swiper
 
 const TestimonialSwiper = new Swiper(".testimonial__wrapper", {
@@ -97,48 +71,6 @@ window.addEventListener("scroll", () => {
   }
 });
 
-// Dark theme
-
-// check for selected theme in localStorage
-let theme = localStorage.getItem("theme");
-
-const themeToggle = document.getElementById("theme-toggle");
-
-const enableDarkTheme = () => {
-  // Add the dark theme class to the body
-  document.body.classList.add("dark-theme");
-  // change the theme toggle icon
-  themeToggle.classList.replace("ri-moon-line", "ri-sun-line");
-  // update the selected theme in localStorage
-  localStorage.setItem("theme", "dark-theme");
-};
-
-const disableDarkTheme = () => {
-  // remove the dark theme class from the body
-  document.body.classList.remove("dark-theme");
-  // change the theme toggle icon
-  themeToggle.classList.replace("ri-sun-line", "ri-moon-line");
-  // update the selected theme in localStorage
-  localStorage.setItem("theme", null);
-};
-
-// check if the user previously enabled the dark theme
-// to load the dark theme
-if (theme === "dark-theme") {
-  enableDarkTheme();
-}
-
-// Add toggle theme event
-themeToggle.addEventListener("click", () => {
-  // get the selected theme
-  theme = localStorage.getItem("theme");
-  if (theme !== "dark-theme") {
-    enableDarkTheme();
-  } else {
-    disableDarkTheme();
-  }
-});
-
 // ScrollReveal Animations
 
 const sr = ScrollReveal({
@@ -148,16 +80,16 @@ const sr = ScrollReveal({
   reset: false,
 });
 
-sr.reveal(".home__content, .about__img, .service__content, .contact__content", {
+sr.reveal(".home__content, .about__img, .contact__content", {
   origin: "left",
 });
 
-sr.reveal(".home__img, .about__content, .service__info, .contact__form", {
+sr.reveal(".home__img, .about__content, .contact__form", {
   origin: "right",
 });
 
 sr.reveal(
-  ".skills__wrapper, .counter__wrapper, .portfolio__wrapper, .testimonial__wrapper, .blog__wrapper, .footer__content",
+  ".portfolio__wrapper, .footer__content",
   {
     origin: "bottom",
   }

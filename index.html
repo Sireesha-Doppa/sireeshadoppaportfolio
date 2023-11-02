@@ -24,7 +24,6 @@
     <!--=================== Main CSS ====================-->
     <link rel="stylesheet" href="main.css">
 </head>
-
 <body>
     <!--===================== Header =====================-->
     <header id="header" class="header">
@@ -60,6 +59,11 @@
                             Contact</a>
                     </li>
                 </ul>
+            </div>
+            <div class="nav__buttons">
+                <span class="nav__toggle">
+                    <i id="nav-toggle" class="ri-menu-4-line"></i>
+                </span>
             </div>
         </nav>
     </header>
@@ -105,7 +109,7 @@ web development
                         </ul>
                     </div>
                 </div>
-                <img src="assets/img/my pic.jpeg" alt="sireesha chaduvula" class="home__img">
+                <img src="images/pic.jpeg" alt="sireesha chaduvula" class="home__img">
             </div>
         </section>
 
@@ -122,50 +126,49 @@ web development
                         Frontend Technology.I'm a Frontend developer.I am interested in working on projects with an open-source focus.</p>
                     <a href=".pdf" class="btn btn--primary"><i class="ri-article-line"></i>Download CV</a>
                 </div>
-                <img src="assets/img/photo.jpg" alt="sireesha chaduvula" class="about__img">
+                <img src="images/pic.jpeg" alt="sireesha chaduvula" class="about__img">
             </div>
         </section>
 
         
-        <!--===================== service =====================-->
-        <section id="education" class="education section section-bg">
+        <!--===================== education =====================-->
+        <section id="education" class="education-section section-bg mt-3 mb-2">
             <h1 class="education-heading">Education</h1>
             <div class="education-container">
-            <div class="service__wrapper container">
-                <div class="service__card">
+            <div class="service__wrapper education-container">
+                <div class="education__card">
                     <h1>Maharaj Vijayaram Gajapathi Raj College of Engineering</h1>
-                    <h2>Electronics & Communication Engineering (ECE)</h2>
-                    <p>Year:2012-2016</p>
-                    <p>Percentage:67%</p>
+                    <h2 class="education-heading1">Electronics & Communication Engineering (ECE)</h2>
+                    <p class="education-paragraph">Year:2012-2016</p>
+                    <p class="education-paragraph">Percentage:67%</p>
                 </div>
             
-                <div class="service__card">
+                <div class="education__card">
                     <h1>Sri Chaitanya Junior College</h1>
-                    <h2>Higher Secondary Education Board</h2>
-                    <p>Year:2012</p>
-                    <p>Percentage:92%</p>
+                    <h2 class="education-heading1">Higher Secondary Education Board</h2>
+                    <p class="education-paragraph">Year:2012</p>
+                    <p class="education-paragraph">Percentage:92%</p>
                 </div>
             
-                <div class="service__card">
+                <div class="education__card">
                     <h1>Government High School</h1>
-                    <h2>Secondary Education Board</br></h2>
-                    <p>Year:2010</p>
-                    <p>Percentage:91%</p>
+                    <h2 class="education-heading1">Secondary Education Board</h2>
+                    <p class="education-paragraph">Year:2010</p>
+                    <p class="education-paragraph">Percentage:91%</p>
                 </div>
             </div>
         </div>
         </section>
 
-        <!--===================== Portfolio =====================-->
-        <section id="portfolio" class="portfolio section">
+        <!--===================== Projects =====================-->
+        <section id="projects" class="portfolio section">
             <div class="section__header container">
-                <span class="section__subtitle">Portfolio</span>
-                <h2 class="section__title">Recent projects</h2>
+                <h1 class="education-heading">Recent projects</h1>
             </div>
             <div class="d-grid portfolio__wrapper container">
                 <div class="portfolio__project">
                     <div class="portfolio__overlay"></div>
-                    <img src="assets/img/project1.jpg" alt="Website Design" class="portfolio__img">
+                    <img src="images/portfolio.png" alt="Website Design" class="portfolio__img">
                     <div class="portfolio__info">
                         <div class="portfolio__info-wrapper">
                             <h3 class="portfolio__title">protofolio website</h3>
@@ -175,19 +178,22 @@ web development
                             </p>
                         </div>
                     </div>
-                    <a href="https://github.com/anithasaisasapu/portfolio.git" class="portfolio__link">
+                    <a href="" class="portfolio__link">
                         <i class="ri-external-link-line"></i>
                     </a>
                 </div>
 
                 <div class="portfolio__project">
                     <div class="portfolio__overlay"></div>
-                    <img src="assets/img/project2.jpg" alt="Mobile App UI/UX Design " class="portfolio__img">
+                    <img src="images/website2.png" alt="Mobile App UI/UX Design" class="portfolio__img">
                     <div class="portfolio__info">
                         <div class="portfolio__info-wrapper">
-                            <h3 class="portfolio__title">DEV Connecter</h3>
+                            <h3 class="portfolio__title">
+                                static portfolio
+                            </h3>
                             <p class="portfolio__description">
-                                This a project where all the developers can meet at a place to showcase there skills and to communicate with other developers.
+                                It is my official Portfolio website to showcase my all works related to
+                                web development
                             </p>
                         </div>
                     </div>
@@ -195,23 +201,6 @@ web development
                         <i class="ri-external-link-line"></i>
                     </a>
                 </div>
-
-                <div class="portfolio__project">
-                    <div class="portfolio__overlay"></div>
-                    <img src="assets/img/project3.jpg" alt="App Re-design" class="portfolio__img">
-                    <div class="portfolio__info">
-                        <div class="portfolio__info-wrapper">
-                            <h3 class="portfolio__title">Traffic sign detection for self driving Automobiles</h3>
-                            <p class="portfolio__description">
-                                This is a project developed using deep learning Techniques which is usefull for self driving Auto modiles to detect the Traffic signs. 
-                            </p>
-                        </div>
-                    </div>
-                    <a href="" class="portfolio__link">
-                        <i class="ri-external-link-line"></i>
-                    </a>
-                </div>
-            </div>
         </section>
         <!--===================== Contact =====================-->
         <section id="contact" class="contact section section-bg">
@@ -245,7 +234,7 @@ web development
                         </div>
                         <div class="contact__info-wrapper">
                             <h3 class="contact__title">Call:</h3>
-                            <p class="contact__description">8074285105</p>
+                            <p><a class="contact__description" href="tel:8074285105">+918074285105</a></p>
                         </div>
                     </div>
 
@@ -255,7 +244,7 @@ web development
                         </div>
                         <div class="contact__info-wrapper">
                             <h3 class="contact__title">Email:</h3>
-                            <p class="contact__description">doppasirisha@gmail.com</p>
+                            <p><a  class="contact__description" href="mailto:doppasirisha@gmail.com">doppasirisha@gmail.com</a></p>
                         </div>
                     </div>
 
@@ -291,9 +280,6 @@ web development
                     <li class="footer__item">
                         <a href="#projects" class="footer__link">Projects</a>
                     </li>
-                    <!-- <li class="footer__item">
-                        <a href="#blog" class="footer__link">Blog</a>
-                    </li> -->
                     <li class="footer__item">
                         <a href="#contact" class="footer__link">Contact</a>
                     </li>
@@ -317,9 +303,6 @@ web development
                 </ul>
             </div>
         </div>
-        <!-- <div class="footer__copyright container">
-            <p>&copy; Copyright 2023 Taurus Code. All Rights Reserved</p>
-        </div> -->
     </footer>
     <a href="#" id="scrolltop" class="scrolltop">
         <i class="ri-arrow-up-line"></i>
