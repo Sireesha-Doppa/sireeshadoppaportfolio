@@ -20,6 +20,8 @@
 
     <!--=================== SwiperJS CSS ====================-->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <script type="text/javascript" src="./main.js"></script>
 
     <!--=================== Main CSS ====================-->
     <link rel="stylesheet" href="main.css">
@@ -109,7 +111,7 @@ web development
                         </ul>
                     </div>
                 </div>
-                <img src="images/pic.jpeg" alt="sireesha chaduvula" class="home__img">
+                <img src="images/pic.jpeg" alt="sireesha chaduvula" data-aos="fade-left" data-aos-duration="2000" class="home__img">
             </div>
         </section>
 
@@ -126,7 +128,7 @@ web development
                         Frontend Technology.I'm a Frontend developer.I am interested in working on projects with an open-source focus.</p>
                     <a href=".pdf" class="btn btn--primary"><i class="ri-article-line"></i>Download CV</a>
                 </div>
-                <img src="images/pic.jpeg" alt="sireesha chaduvula" class="about__img">
+                <img src="images/pic.jpeg" alt="sireesha chaduvula" data-aos="fade-right" data-aos-duration="2000" class="about__img">
             </div>
         </section>
 
@@ -136,21 +138,22 @@ web development
             <h1 class="education-heading">Education</h1>
             <div class="education-container">
             <div class="service__wrapper education-container">
-                <div class="education__card">
+                
+                <div class="education__card" data-aos="fade-right" data-aos-duration="2000">
                     <h1>Maharaj Vijayaram Gajapathi Raj College of Engineering</h1>
                     <h2 class="education-heading1">Electronics & Communication Engineering (ECE)</h2>
                     <p class="education-paragraph">Year:2012-2016</p>
                     <p class="education-paragraph">Percentage:67%</p>
                 </div>
             
-                <div class="education__card">
+                <div class="education__card"  data-aos="fade-left" data-aos-duration="2000">
                     <h1>Sri Chaitanya Junior College</h1>
                     <h2 class="education-heading1">Higher Secondary Education Board</h2>
                     <p class="education-paragraph">Year:2012</p>
                     <p class="education-paragraph">Percentage:92%</p>
                 </div>
             
-                <div class="education__card">
+                <div class="education__card"  data-aos="fade-right" data-aos-duration="2000">
                     <h1>Government High School</h1>
                     <h2 class="education-heading1">Secondary Education Board</h2>
                     <p class="education-paragraph">Year:2010</p>
@@ -166,7 +169,7 @@ web development
                 <h1 class="education-heading">Recent projects</h1>
             </div>
             <div class="d-grid portfolio__wrapper container">
-                <div class="portfolio__project">
+                <div class="portfolio__project" data-aos="zoom-out-right">
                     <div class="portfolio__overlay"></div>
                     <img src="images/portfolio.png" alt="Website Design" class="portfolio__img">
                     <div class="portfolio__info">
@@ -316,6 +319,10 @@ web development
 
     <!--=================== Main JS ====================-->
     <script src="assets/js/main.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
 </body>
 
 </html>

@@ -14,6 +14,7 @@ navLinks.forEach((link) => {
   });
 });
 
+
 // change the nav toggle icon
 function changeToggleIcon() {
   if (navMenu.classList.contains("nav__menu--open")) {
@@ -46,19 +47,6 @@ function addActiveLink() {
 
 window.addEventListener("scroll", addActiveLink);
 
-// Testimonial Swiper
-
-const TestimonialSwiper = new Swiper(".testimonial__wrapper", {
-  spaceBetween: 40,
-  loop: true,
-  grabCursor: true,
-  centeredSlides: true,
-  slidesPerView: "auto",
-  pagination: {
-    el: ".swiper-pagination",
-    clickable: true,
-  },
-});
 
 // Scrolltop
 const scrolltop = document.getElementById("scrolltop");
@@ -94,3 +82,4 @@ sr.reveal(
     origin: "bottom",
   }
 );
+
