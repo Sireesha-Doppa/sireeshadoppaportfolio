@@ -146,13 +146,13 @@
   }
   
   .section__title {
-    font-size: var(--fs-xxl);
+    font-size: var(--fs-xl);
     margin: 0.5rem 0 1.5rem;
   }
   
   .section__subtitle {
     font-weight: var(--fw-bold);
-    font-size: var(--fs-md);
+    font-size: var(--fs-xxl);
     color: var(--color-primary);
   }
   
